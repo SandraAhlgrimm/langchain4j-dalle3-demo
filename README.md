@@ -16,7 +16,12 @@ A super simple Java Spring project that utilizes DALL-E3, LangChain4J, and Azure
 
     ```bash
     git clone https://github.com/sandraahlgrimm/langchain4j-dalle3-demo.git
+    export DIR=$PWD/langchain4j-dalle3-demo
+    cd ${DIR}
+    git checkout 20240425
     ```
+    
+    If you see an error about being in `Detached HEAD` state, the message is safe to ignore. It just means you have checked out a tag.
 
 2. Create an Azure Open AI account and get the required credentials:
 
