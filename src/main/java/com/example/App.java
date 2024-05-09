@@ -28,6 +28,7 @@ public class App
         System.out.println(response.toString());
         Image image = response.content();
         System.out.println("The generated image is here: " + image.url());
+        System.exit(0);
     }
     
 }
