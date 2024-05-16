@@ -17,8 +17,6 @@ A super simple Java project that utilizes DALL-E3, LangChain4J, and Azure Open A
     ```bash
     git clone https://github.com/sandraahlgrimm/langchain4j-dalle3-demo.git
     ```
-    
-    These instructions were tested to work with the code as of tag `20240508`. The instructions should work with the `HEAD` commit, but if you run into problems, try checking out the tag.
 
 2. Create an Azure Open AI account and get the required credentials.
 
@@ -45,7 +43,7 @@ A super simple Java project that utilizes DALL-E3, LangChain4J, and Azure Open A
 
 ```bash
 export AZURE_OPENAI_ENDPOINT=<select the copy icon on the Endpoint in Azure AI Studio playground>
-export AZURE_OPENAI_DEPLOYMENT_NAME=<your resource group name>
+export AZURE_OPENAI_DEPLOYMENT_NAME=<your openai deployment name>
 export AZURE_OPENAI_API_KEY=<select the copy icon on the API key in Azure AI Studio>
 ```
 
@@ -55,7 +53,7 @@ export AZURE_OPENAI_API_KEY=<select the copy icon on the API key in Azure AI Stu
 
 ![Screenshot of the executed project highlighting the RUN button](./images/screenshot-run-image-creation.png)
 
-   Alternatively, run in the shell with `mvn clean install exec:java`
+   Alternatively, run in the shell with `mvn clean package exec:exec`
 
 ## Usage
 
