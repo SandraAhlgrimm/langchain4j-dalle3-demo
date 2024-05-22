@@ -9,9 +9,7 @@
   <artifactId>demo</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>demo</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <name>lanchain4j-dalle3-demo</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -91,6 +89,21 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>1.6.0</version>
+          <configuration>
+            <executable>java</executable>
+            <arguments>
+              <argument>-cp</argument>
+              <classpath/>
+              <argument>com.example.App</argument>
+            </arguments>
+          </configuration>
+        </plugin>
+              
       </plugins>
     </pluginManagement>
   </build>
